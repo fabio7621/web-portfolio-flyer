@@ -1,0 +1,22 @@
+/* 全站共用：色票變數、頁面底色、文字工具 class、進場動畫 */
+:root{
+  --paper:#f5e9d6;
+  --ink:#111214;
+  --slate:#44627a;
+  --orange:#f7921e;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#e9dcc6;overflow:hidden}
+body{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-stretch:125%;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* 海報上的文字一律絕對定位，用設計稿 px 擺位置 */
+.t{position:absolute;margin:0;font-weight:800;font-stretch:125%;letter-spacing:.02em;line-height:1;white-space:nowrap}
+
+/* 淡入上移；延遲用 inline 的 animation-delay 控制 */
+.fade{opacity:0;transform:translateY(8px);animation:fadeUp .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
