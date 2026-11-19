@@ -9,7 +9,12 @@ npm install       # 第一次
 npm run dev       # 開發，打開終端機顯示的網址
 npm run build     # 打包到 dist/（相對路徑，可直接丟 GitHub Pages）
 npm run preview   # 預覽打包結果
+npm run deploy    # 打包並發佈到 GitHub Pages（推到 gh-pages 分支）
 ```
+
+線上版：https://fabio7621.github.io/web-portfolio-flyer/
+
+`npm run deploy` 只會更新網站，原始碼要另外 `git push` 到 main。
 
 字型（Archivo、Kaushan Script）從 Google Fonts 載入，需要連網。
 
